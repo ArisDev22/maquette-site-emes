@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ============================================================
+       EMES — École des Métiers de la Santé de Bamougoum
+       Maquette de site vitrine — HTML5 / CSS3 / JavaScript natif
+       Aucun framework, aucune dépendance externe.
+       ============================================================ -->
+
+  <title>EMES Bamougoum — École des Métiers de la Santé | Se former aux métiers de la santé</title>
+  <meta name="description" content="École des Métiers de la Santé (EMES) de Bamougoum, près de Bafoussam (Cameroun) : présentation de l'établissement, des formations aux métiers de la santé, de la vie pédagogique, des admissions et des contacts.">
+  <meta name="author" content="EMES — École des Métiers de la Santé de Bamougoum">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#15543D">
+
+  <!-- Réseaux sociaux -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="EMES — École des Métiers de la Santé de Bamougoum">
+  <meta property="og:title" content="EMES Bamougoum — École des Métiers de la Santé">
+  <meta property="og:description" content="Se former aux métiers de la santé à Bamougoum, près de Bafoussam (Cameroun).">
+  <meta property="og:image" content="img/hero-sante.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon.png">
+
+  <!-- Feuille de style unique -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Lien d'évitement pour la navigation au clavier -->
+  <a class="skip-link" href="#accueil">Aller au contenu principal</a>
+
+  <!-- Bandeau d'information sur la nature de la page (maquette) -->
+  <p class="bandeau-demo" role="note">
+    Maquette de démonstration — les informations institutionnelles doivent être validées par la direction de l'EMES.
+  </p>
+
+  <!-- ============================ EN-TÊTE ============================ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+
+      <a class="brand" href="#accueil" aria-label="EMES — École des métiers de la santé, retour à l'accueil">
+        <img
+          src="img/logo.png"
+          alt="EMES — École des métiers de la santé"
+          class="brand-logo"
+          width="180" height="120"
+        >
+      </a>
+
+      <button
+        class="nav-toggle"
+        id="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        aria-label="Ouvrir le menu de navigation"
+      >
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="main-nav" id="primary-navigation" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#ecole">L'école</a></li>
+          <li><a href="#formations">Formations</a></li>
+          <li><a href="#vie-pedagogique">Vie pédagogique</a></li>
+          <li><a href="#actualites">Actualités</a></li>
+          <li><a href="#admissions">Admissions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="#formations">Découvrir les formations</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================ ACCUEIL / HERO ============================ -->
+    <section class="hero" id="accueil">
+      <div class="hero-media">
+        <img
+          src="img/hero-sante.jpg"
+          alt="Personnels de santé en blouse dans un environnement de soins et de formation"
+          width="1600" height="1067" fetchpriority="high" decoding="async"
+        >
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <p class="hero-eyebrow">Bamougoum — Bafoussam, Cameroun</p>
+        <h1>Construisez votre avenir dans les métiers de la santé</h1>
+        <p class="hero-text">
+          L'École des Métiers de la Santé (EMES) de Bamougoum forme les futurs professionnels
+          de la santé de l'Ouest-Cameroun. Un enseignement professionnalisant, des travaux
+          pratiques encadrés et un accompagnement attentif de chaque étudiant.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#ecole">Découvrir l'établissement</a>
+          <a class="btn btn-ghost" href="#admissions">Demander des informations</a>
+        </div>
+
+        <ul class="hero-points">
+          <li>Formation professionnelle</li>
+          <li>Travaux pratiques encadrés</li>
+          <li>Proximité de Bafoussam</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================ L'ÉCOLE ============================ -->
+    <section class="section" id="ecole">
+      <div class="container grid-deux">
+
+        <div class="col-texte">
+          <p class="section-eyebrow">L'établissement</p>
+          <h2>Une école tournée vers les métiers de la santé</h2>
+          <p>
+            L'École des Métiers de la Santé (EMES) de Bamougoum est un établissement
+            d'enseignement professionnel implanté à Bamougoum, dans le département de la Mifi,
+            à proximité de Bafoussam, chef-lieu de la région de l'Ouest du Cameroun.
+          </p>
+          <p>
+            Sa vocation est de préparer des professionnels compétents, rigoureux et humains,
+            immédiatement opérationnels sur le terrain des soins et de la santé publique.
+            La formation associe les enseignements théoriques aux travaux pratiques et aux
+            stages en milieu professionnel.
+          </p>
+
+          <!-- Informations à confirmer par la direction -->
+          <div class="encart-provisoire">
+            <h3 class="encart-titre">
+              Informations institutionnelles
+              <span class="badge-prov">À confirmer</span>
+            </h3>
+            <p class="encart-texte">
+              Les éléments suivants doivent être fournis et validés par la direction de
+              l'établissement avant toute publication :
+            </p>
+            <ul class="liste-a-completer">
+              <li>Texte de présentation officiel et historique de l'école</li>
+              <li>Numéro d'autorisation de création et d'ouverture (MINSANTE)</li>
+              <li>Nom et qualité du responsable de l'établissement</li>
+              <li>Effectifs, capacités d'accueil et équipements</li>
+              <li>Adresse postale complète et boîte postale</li>
+            </ul>
+          </div>
+        </div>
+
+        <figure class="col-image">
+          <img
+            src="img/ecole-exterieur.jpg"
+            alt="Bâtiment d'un établissement d'enseignement supérieur en Afrique"
+            width="1600" height="1067" loading="lazy" decoding="async"
+          >
+          <figcaption>
+            Illustration générique — photographie à remplacer par les vues réelles de l'EMES.
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- ============================ CHIFFRES / REPÈRES ============================ -->
+    <section class="section section-alt" aria-labelledby="titre-reperes">
+      <div class="container">
+        <h2 id="titre-reperes" class="section-titre-centre">L'EMES en bref</h2>
+        <p class="section-intro">Repères à confirmer avec l'administration de l'établissement.</p>
+
+        <ul class="reperes">
+          <li class="repere">
+            <span class="repere-valeur" data-etat="provisoire">—</span>
+            <span class="repere-label">Filières ouvertes</span>
+          </li>
+          <li class="repere">
+            <span class="repere-valeur" data-etat="provisoire">—</span>
+            <span class="repere-label">Durée des formations</span>
+          </li>
+          <li class="repere">
+            <span class="repere-valeur" data-etat="provisoire">—</span>
+            <span class="repere-label">Étudiants par promotion</span>
+          </li>
+          <li class="repere">
+            <span class="repere-valeur" data-etat="provisoire">—</span>
+            <span class="repere-label">Corps enseignant</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================ FORMATIONS ============================ -->
+    <section class="section" id="formations">
+      <div class="container">
+        <p class="section-eyebrow">Nos parcours</p>
+        <h2>Des formations professionnalisantes</h2>
+        <p class="section-intro">
+          Les parcours présentés ci-dessous illustrent la structure de la page.
+          <strong>Les intitulés exacts des filières, les diplômes délivrés, les durées de
+          formation, les agréments et les conditions d'admission doivent être communiqués
+          par la direction de l'EMES</strong> : ils ne sont volontairement pas inventés ici.
+        </p>
+
+        <div class="cards">
+
+          <article class="card">
+            <img
+              src="img/formation-1.jpg"
+              alt="Salle de simulation clinique avec matériel pédagogique de soins"
+              width="1600" height="1067" loading="lazy" decoding="async"
+            >
+            <div class="card-body">
+              <h3>Filière de soins</h3>
+              <p>
+                Parcours centré sur les soins à la personne, l'hygiène, les gestes techniques
+                et la relation avec le patient.
+              </p>
+              <p class="tag-prov">Intitulé et durée à confirmer</p>
+              <a class="lien-fleche" href="#admissions">Consulter les modalités</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="img/formation-2.jpg"
+              alt="Technicienne de laboratoire observant un échantillon au microscope"
+              width="1600" height="2400" loading="lazy" decoding="async"
+            >
+            <div class="card-body">
+              <h3>Filière biomédicale et laboratoire</h3>
+              <p>
+                Parcours orienté vers les analyses, les prélèvements, le travail en laboratoire
+                et le contrôle qualité.
+              </p>
+              <p class="tag-prov">Intitulé et durée à confirmer</p>
+              <a class="lien-fleche" href="#admissions">Consulter les modalités</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="img/formation-3.jpg"
+              alt="Professionnelle de santé réalisant un acte de soin auprès d'une patiente"
+              width="1600" height="1067" loading="lazy" decoding="async"
+            >
+            <div class="card-body">
+              <h3>Filière santé communautaire</h3>
+              <p>
+                Parcours dédié à la prévention, à la sensibilisation des populations et aux
+                interventions de santé publique sur le terrain.
+              </p>
+              <p class="tag-prov">Intitulé et durée à confirmer</p>
+              <a class="lien-fleche" href="#admissions">Consulter les modalités</a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="note-legale">
+          <span class="badge-prov">À confirmer</span>
+          Aucune filière, aucun diplôme, aucune durée de formation, aucun agrément et aucune
+          condition d'admission ne sont affirmés sur cette page. Ces informations seront
+          publiées dès réception des documents officiels.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================ VIE PÉDAGOGIQUE ============================ -->
+    <section class="section section-alt" id="vie-pedagogique">
+      <div class="container">
+        <p class="section-eyebrow">Vie pédagogique</p>
+        <h2>Apprendre au plus près de la pratique</h2>
+        <p class="section-intro">
+          Cours magistraux, travaux dirigés, travaux pratiques et stages composent le quotidien
+          des étudiants. Les images ci-dessous sont des illustrations génériques du domaine
+          de la formation sanitaire.
+        </p>
+
+        <div class="galerie">
+          <figure class="galerie-item galerie-item--large">
+            <img
+              src="img/travaux-pratiques.jpg"
+              alt="Étudiantes en soins infirmiers s'exerçant à la mesure des signes vitaux"
+              width="1600" height="1142" loading="lazy" decoding="async"
+            >
+            <figcaption>Travaux pratiques et gestes de soins</figcaption>
+          </figure>
+
+          <figure class="galerie-item">
+            <img
+              src="img/salle-cours.jpg"
+              alt="Salle de cours avec un enseignant devant un tableau"
+              width="1600" height="1200" loading="lazy" decoding="async"
+            >
+            <figcaption>Salles de cours et équipements pédagogiques</figcaption>
+          </figure>
+
+          <figure class="galerie-item">
+            <img
+              src="img/formation-sante.jpg"
+              alt="Participantes attentives lors d'une session de formation en santé"
+              width="1600" height="1067" loading="lazy" decoding="async"
+            >
+            <figcaption>Enseignements théoriques</figcaption>
+          </figure>
+
+          <figure class="galerie-item">
+            <img
+              src="img/equipe-pedagogique.jpg"
+              alt="Plateau technique de formation aux gestes cliniques"
+              width="1600" height="1200" loading="lazy" decoding="async"
+            >
+            <figcaption>Plateaux techniques</figcaption>
+          </figure>
+
+          <figure class="galerie-item">
+            <img
+              src="img/etudiants.jpg"
+              alt="Étudiants assis dans un amphithéâtre pendant un cours"
+              width="1600" height="1200" loading="lazy" decoding="async"
+            >
+            <figcaption>Vie étudiante</figcaption>
+          </figure>
+
+          <figure class="galerie-item">
+            <img
+              src="img/ecole-exterieur.jpg"
+              alt="Vue extérieure d'un campus d'enseignement supérieur"
+              width="1600" height="1067" loading="lazy" decoding="async"
+            >
+            <figcaption>Environnement de formation</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ ACTUALITÉS ============================ -->
+    <section class="section" id="actualites">
+      <div class="container">
+        <p class="section-eyebrow">Actualités</p>
+        <h2>La vie de l'école</h2>
+        <p class="section-intro">
+          <strong>Les actualités ci-dessous sont des exemples de présentation.</strong>
+          Aucune information réelle, aucune date officielle et aucun événement ne sont affirmés.
+        </p>
+
+        <div class="cards cards-actus">
+
+          <article class="card actus">
+            <img
+              src="img/actualite-1.jpg"
+              alt="Personnel de santé en intervention sur le terrain"
+              width="1600" height="1067" loading="lazy" decoding="async"
+            >
+            <div class="card-body">
+              <p class="actus-meta">
+                <span class="badge-prov">Exemple</span>
+                <time datetime="2026-01-15">15 janvier 2026</time>
+              </p>
+              <h3>Exemple d'article : retour sur les stages en milieu professionnel</h3>
+              <p>Emplacement réservé à un contenu rédigé par l'établissement.</p>
+              <a class="lien-fleche" href="#contact">Lire la suite</a>
+            </div>
+          </article>
+
+          <article class="card actus">
+            <img
+              src="img/actualite-2.jpg"
+              alt="Technicien de laboratoire travaillant sur des échantillons"
+              width="1600" height="1067" loading="lazy" decoding="async"
+            >
+            <div class="card-body">
+              <p class="actus-meta">
+                <span class="badge-prov">Exemple</span>
+                <time datetime="2026-02-03">3 février 2026</time>
+              </p>
+              <h3>Exemple d'article : travaux pratiques et plateaux techniques</h3>
+              <p>Emplacement réservé à un contenu rédigé par l'établissement.</p>
+              <a class="lien-fleche" href="#contact">Lire la suite</a>
+            </div>
+          </article>
+
+          <article class="card actus">
+            <img
+              src="img/actualite-3.jpg"
+              alt="Professionnels de la santé réunis lors d'une activité de sensibilisation"
+              width="1600" height="1067" loading="lazy" decoding="async"
+            >
+            <div class="card-body">
+              <p class="actus-meta">
+                <span class="badge-prov">Exemple</span>
+                <time datetime="2026-03-12">12 mars 2026</time>
+              </p>
+              <h3>Exemple d'article : actions de sensibilisation en santé communautaire</h3>
+              <p>Emplacement réservé à un contenu rédigé par l'établissement.</p>
+              <a class="lien-fleche" href="#contact">Lire la suite</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ ADMISSIONS ============================ -->
+    <section class="section section-verte" id="admissions">
+      <div class="container">
+        <p class="section-eyebrow clair">Admissions</p>
+        <h2>Comment obtenir des renseignements</h2>
+
+        <div class="etapes">
+          <article class="etape">
+            <span class="etape-num" aria-hidden="true">1</span>
+            <h3>Prendre contact</h3>
+            <p>
+              Adressez-vous directement à l'établissement par téléphone, par courriel ou en
+              vous présentant sur place à Bamougoum.
+            </p>
+          </article>
+
+          <article class="etape">
+            <span class="etape-num" aria-hidden="true">2</span>
+            <h3>Retirer le dossier</h3>
+            <p>
+              La liste des pièces à fournir, les conditions d'admission et les modalités
+              d'inscription sont remises par l'administration.
+            </p>
+          </article>
+
+          <article class="etape">
+            <span class="etape-num" aria-hidden="true">3</span>
+            <h3>Déposer la candidature</h3>
+            <p>
+              Le dossier complet est déposé auprès du secrétariat selon le calendrier
+              communiqué par l'école.
+            </p>
+          </article>
+        </div>
+
+        <p class="avertissement">
+          <strong>Information importante :</strong> aucun calendrier officiel, aucun frais de
+          formation, aucune condition d'admission et aucune date de concours ne sont publiés
+          sur cette maquette. Ces informations seront mises en ligne après validation par la
+          direction de l'EMES.
+        </p>
+
+        <p class="centre">
+          <a class="btn btn-light" href="#contact">Contacter l'établissement</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================ CONTACT ============================ -->
+    <section class="section" id="contact">
+      <div class="container grid-deux grid-contact">
+
+        <div class="col-texte">
+          <p class="section-eyebrow">Nous joindre</p>
+          <h2>Contact et localisation</h2>
+
+          <ul class="liste-contact">
+            <li>
+              <span class="contact-label">Localisation</span>
+              <span class="contact-valeur">F9XV+38C, Bamougoum — près de Bafoussam, Cameroun</span>
+            </li>
+            <li>
+              <span class="contact-label">Téléphone</span>
+              <span class="contact-valeur provisoire">À confirmer par la direction</span>
+            </li>
+            <li>
+              <span class="contact-label">Adresse électronique</span>
+              <span class="contact-valeur provisoire">À confirmer par la direction</span>
+            </li>
+            <li>
+              <span class="contact-label">Boîte postale</span>
+              <span class="contact-valeur provisoire">À confirmer par la direction</span>
+            </li>
+            <li>
+              <span class="contact-label">Horaires d'ouverture</span>
+              <span class="contact-valeur provisoire">À confirmer par la direction</span>
+            </li>
+          </ul>
+
+          <a class="lien-fleche" href="https://www.google.com/maps/search/?api=1&amp;query=%C3%89cole%20des%20M%C3%A9tiers%20de%20la%20Sant%C3%A9%2C%20Bamougoum"
+             target="_blank" rel="noopener noreferrer">
+            Ouvrir la localisation sur Google Maps
+          </a>
+        </div>
+
+        <div class="col-texte">
+          <h3>Formulaire de demande d'information</h3>
+          <p class="mention-demo">
+            <span class="badge-prov">Démonstration</span>
+            Ce formulaire est une démonstration : il valide et affiche une confirmation à
+            l'écran, mais <strong>n'envoie aucune donnée</strong> à l'établissement. Il devra
+            être relié à une solution serveur ou à une adresse de courriel avant publication.
+          </p>
+
+          <form class="formulaire" id="formulaire-contact" novalidate>
+            <div class="champ">
+              <label for="nom">Nom complet <span class="requis" aria-hidden="true">*</span></label>
+              <input type="text" id="nom" name="nom" autocomplete="name" required
+                     aria-describedby="erreur-nom">
+              <p class="erreur" id="erreur-nom" role="alert" hidden></p>
+            </div>
+
+            <div class="champ">
+              <label for="email">Adresse électronique <span class="requis" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required
+                     aria-describedby="erreur-email">
+              <p class="erreur" id="erreur-email" role="alert" hidden></p>
+            </div>
+
+            <div class="champ">
+              <label for="telephone">Téléphone</label>
+              <input type="tel" id="telephone" name="telephone" autocomplete="tel"
+                     aria-describedby="erreur-telephone">
+              <p class="erreur" id="erreur-telephone" role="alert" hidden></p>
+            </div>
+
+            <div class="champ">
+              <label for="sujet">Objet de la demande</label>
+              <select id="sujet" name="sujet">
+                <option value="">— Sélectionner —</option>
+                <option value="formations">Informations sur les formations</option>
+                <option value="admissions">Conditions d'admission</option>
+                <option value="visite">Visite de l'établissement</option>
+                <option value="autre">Autre demande</option>
+              </select>
+            </div>
+
+            <div class="champ">
+              <label for="message">Message <span class="requis" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="5" required
+                        aria-describedby="erreur-message"></textarea>
+              <p class="erreur" id="erreur-message" role="alert" hidden></p>
+            </div>
+
+            <div class="champ champ-case">
+              <input type="checkbox" id="consentement" name="consentement" required
+                     aria-describedby="erreur-consentement">
+              <label for="consentement">
+                J'accepte d'être recontacté au sujet de ma demande.
+                <span class="requis" aria-hidden="true">*</span>
+              </label>
+              <p class="erreur" id="erreur-consentement" role="alert" hidden></p>
+            </div>
+
+            <button class="btn btn-primary btn-large" type="submit">Envoyer ma demande</button>
+
+            <p class="message-confirmation" id="confirmation" role="status" hidden></p>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Emplacement réservé à la carte de localisation -->
+      <div class="container">
+        <div class="carte-emplacement" role="region" aria-label="Emplacement réservé à la carte">
+          <p class="carte-titre">Emplacement réservé — carte de localisation</p>
+          <p class="carte-texte">
+            F9XV+38C, Bamougoum. L'intégration d'une carte interactive sera réalisée après
+            validation des coordonnées exactes et des conditions d'utilisation.
+          </p>
+          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=F9XV%2B38C%20Bamougoum"
+             target="_blank" rel="noopener noreferrer">Voir sur Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================ PIED DE PAGE ============================ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <div class="footer-col footer-brand">
+        <img
+          src="img/logo.png"
+          alt="EMES — École des métiers de la santé"
+          class="footer-logo"
+          width="160" height="107" loading="lazy" decoding="async"
+        >
+        <p>
+          École des Métiers de la Santé — Bamougoum, près de Bafoussam, Cameroun.
+        </p>
+      </div>
+
+      <nav class="footer-col" aria-label="Navigation de pied de page">
+        <h2 class="footer-titre">Navigation</h2>
+        <ul class="footer-liste">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#ecole">L'école</a></li>
+          <li><a href="#formations">Formations</a></li>
+          <li><a href="#vie-pedagogique">Vie pédagogique</a></li>
+          <li><a href="#actualites">Actualités</a></li>
+          <li><a href="#admissions">Admissions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2 class="footer-titre">Coordonnées</h2>
+        <address class="footer-adresse">
+          F9XV+38C, Bamougoum<br>
+          Région de l'Ouest — Cameroun
+        </address>
+        <p class="footer-provisoire">
+          Téléphone, courriel et boîte postale : à confirmer par la direction.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="container footer-bas">
+      <p>© <span id="annee-courante">2026</span> EMES — École des Métiers de la Santé de Bamougoum. Maquette de démonstration.</p>
+      <p class="footer-note">Site réalisé sans framework : HTML5, CSS3 et JavaScript natif.</p>
+    </div>
+  </footer>
+
+  <!-- Bouton de retour en haut de page -->
+  <button class="retour-haut" id="retour-haut" type="button" aria-label="Revenir en haut de la page" hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="22" height="22">
+      <path d="M12 5l-7 7h4v7h6v-7h4z" fill="currentColor"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
